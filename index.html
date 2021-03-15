@@ -6,18 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To jest moja pierwsza strona</title>
+    <style>
+        header>h6 {
+            color: green;
+        }
+
+        main>p {
+            color: blue;
+        }
+
+        main th {
+            color: violet;
+        }
+
+        #pierwszy-paragraf {
+            text-decoration: underline;
+        }
+
+        p.w-main {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>To jest jakiś tekst</h1>
-        <h2>To jest nagłówek 2</h2>
+        <h1 style="color: red;">To jest jakiś tekst</h1>
+        <h2 style="font-size: 9px;">To jest nagłówek 2</h2>
         <h6>To jest nagłówek 6</h6>
     </header>
     <main>
-        <p>Witaj Świecie! dasu TU ENTER<br>
+        <p id="pierwszy-paragraf">Witaj Świecie! dasu TU ENTER<br>
             idhauisdh uash duash TU ENTER<br>
             duhasu hsu dashd uas TU ENTER<br>
+            uidu hus dsad asd a s <a href="https://interia.pl" target="blank">TO JEST LINK</a> uisdyu yauwhduawhwh
+            uhaui hdauwih
+            duah udhwaui hduah wuah udhwau hduah udnaui nwuan
+            udhwauyhduaydyahdyah sa</p>
+        <p class="w-main">Witaj Świecie! dasu TU ENTER<br>
+            idhauisdh uash duash duhasu hsu dashd uas TU ENTER<br>
             uidu hus duash uisdyu yauwhduawhwh uhaui hdauwih
             duah udhwaui hduah wuah udhwau hduah udnaui nwuan
             udhwauyhduaydyahdyah sa</p>
@@ -26,7 +53,13 @@
             uidu hus duash uisdyu yauwhduawhwh uhaui hdauwih
             duah udhwaui hduah wuah udhwau hduah udnaui nwuan
             udhwauyhduaydyahdyah sa</p>
+        <p class="w-main">Witaj Świecie! dasu TU ENTER<br>
+            idhauisdh uash duash duhasu hsu dashd uas TU ENTER<br>
+            uidu hus duash uisdyu yauwhduawhwh uhaui hdauwih
+            duah udhwaui hduah wuah udhwau hduah udnaui nwuan
+            udhwauyhduaydyahdyah sa</p>
 
+        <h6>To jest nagłówek 6</h6>
         <ul>
             <li>pierwszy element</li>
             <li>kolejny element</li>
@@ -40,7 +73,7 @@
             <li>das89uda8s</li>
         </ol>
 
-        <table>
+        <table class="w-main">
             <thead>
                 <tr>
                     <th>Kolumna pierwsza</th>
@@ -69,11 +102,10 @@
             </tfoot>
         </table>
 
-        <img
-            src="https://img.smyk.com/https://beta-cdn.smyk.com/media/product/760/1/tm-toys-goldie-piesek-interaktywny-26-cm-6269746.jpg">
+        <img src="images/piesek.bmp" alt="Piesek">
     </main>
     <footer>
-        Autor strony: Piotrek
+        <p>Autor strony: Piotrek</p>
     </footer>
 </body>
 
