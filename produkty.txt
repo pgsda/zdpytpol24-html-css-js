@@ -1,0 +1,6 @@
+Rower Miejski;999
+Rower Wiejski;1200
+Rower Damski;1500
+Rower Męski;1500
+Trekkingowy;9000
+Górski;927
