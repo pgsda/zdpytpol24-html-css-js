@@ -2,6 +2,10 @@ function add_to_cart(product_id) {
     var cart = JSON.parse(localStorage.getItem('cart'));
 
     if (!cart) {
+        cart = [];
+    }
+
+    if (!cart[product_id]) {
         cart[product_id] = 1;
     } else {
         cart[product_id]++;
