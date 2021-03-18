@@ -3,12 +3,18 @@ function pull_products() {
 
     xhttp.onload = function () {
         var p = JSON.parse(this.responseText);
+        var tbody = document.getElementById('products');
 
-        document.getElementById('products').innerHTML = '';
+        tbody.innerHTML = '';
 
         for (var i = 0; i < p.length; i++) {
-            document.getElementById('products').innerHTML +=
-                '<tr><td>' + p[i]['name'] + '</td></tr>';
+            tbody.innerHTML +=
+                '<tr>' +
+                '<td>' + p[i]['name'] + '</td>' +
+                '<td>' + p[i]['price'] + ' zł</td>' +
+                '<td><input type="button" onclick="add_to_cart(' + i + ')"' +
+                ' value="Dodaj do koszyka"></td>' +
+                '</tr>';
         }
     }
 
@@ -16,4 +22,7 @@ function pull_products() {
     xhttp.send();
 }
 
-document.getElementsByName('load')[0].addEventListener('click', pull_products);
+window.addEventListener('load', function () {
+    document.getElementsByName('load')[0].addEventListener('click', pull_products);
+    pull_products();
+});
