@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Rower Miejski",
+        "price": 999.99
+    },
+    {
+        "name": "Rower Wiejski",
+        "price": 1200.99
+    },
+    {
+        "name": "Rower Damski",
+        "price": 875.99
+    },
+    {
+        "name": "Rower Trekkingowy",
+        "price": 1500.99
+    },
+    {
+        "name": "Rower NOWY!",
+        "price": 1784.22
+    }
+]
