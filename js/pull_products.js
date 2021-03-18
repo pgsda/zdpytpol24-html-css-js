@@ -1,3 +1,15 @@
+function add_to_cart(product_id) {
+    var cart = JSON.parse(localStorage.getItem('cart'));
+
+    if (!cart) {
+        cart[product_id] = 1;
+    } else {
+        cart[product_id]++;
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
 function pull_products() {
     var xhttp = new XMLHttpRequest();
 
