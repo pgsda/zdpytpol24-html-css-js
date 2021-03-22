@@ -34,7 +34,7 @@ function pull_products() {
         }
     }
 
-    xhttp.open("GET", "produkty.json", true);
+    xhttp.open("GET", "/static/produkty.json", true);
     xhttp.send();
 }
 

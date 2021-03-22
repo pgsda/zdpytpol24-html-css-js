@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block left %}
+Tu są produkty
+<table>
+    <tbody id="products">
+    </tbody>
+</table>
+{% endblock %}
+
+{% block right %}
+<input type="button" name="load" value="Odśwież dane produktów">
+{% endblock %}
+
+{% block scripts %}
+<script src="static/js/pull_products.js"></script>
+{% endblock %}
