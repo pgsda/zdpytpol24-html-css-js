@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block left %}
+<h1>Średnia ocen strony: {{ rating_avg }}</h1>
+{% for comment in cl %}
+<h4>{{ comment.nick }}</h4>
+<p>{{ comment.rating }}</p>
+<p>{{ comment.comment }}</p>
+<hr>
+{% endfor %}
+{% endblock %}
+
+{% block right %}
+<form action="/add_comment" method="POST">
+    <p>
+        Nick:
+    </p>
+    <p>
+        <input name="nick" type="text" required pattern="[A-Z]{1}.*">
+    </p>
+    <p>
+        Twoja ocena:
+    </p>
+    <p>
+        <select name="rating">
+            <option value="1">jedna gwiazdka</option>
+            <option value="2">dwie gwiazdki</option>
+            <option value="3">trzy gwiazdki</option>
+            <option value="4">cztery gwiazdki</option>
+            <option value="5">pięć gwiazdek</option>
+        </select>
+    </p>
+    <p>
+        Tekst:
+    </p>
+    <p>
+        <textarea name="comment" cols="30" rows="10" required></textarea>
+    </p>
+    <p>
+        <input type="submit" name="w1" value="Wyślij">
+        <input type="submit" name="w2" value="Wyślij2">
+        <input type="reset" value="Wyczyść formularz">
+    </p>
+</form>
+{% endblock %}
